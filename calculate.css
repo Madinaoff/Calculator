@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.calculator {
+    background-color: black;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+.display {
+    background-color: black;
+    padding: 10px;
+    height: 20px;
+    font-size: 28px;
+}
+
+input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    background-color: black;
+    outline: none;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    border: none;
+    background-color: #ccc;
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+button.wide {
+    grid-column: span 2;
+}
+button.orange {
+    background-color: #FFA500; 
+    color: white;
+}
+button.gray {
+    background-color: rgb(180, 177, 177);   
+}
+

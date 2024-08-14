@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8f8d8d; /* Легкий серый фон для контраста */
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    background-color: #ffffff; /* Белый фон для калькулятора */
+    border-radius: 0; /* Без скругления углов */
+    width: 320px; /* Ширина калькулятора */
+}
+
+.display {
+    background-color: #ffffff; /* Белый фон для дисплея */
+    padding: 15px;
+    text-align: right;
+    font-size: 32px;
+    color: #333; /* Темный текст для контраста */
+    border: none; /* Убираем границы дисплея */
+}
+
+input {
+    width: 100%;
+    border: none; /* Убираем границу у поля ввода */
+    background: transparent; /* Прозрачный фон */
+    color: inherit; /* Наследуем цвет текста от родителя */
+    font-size: inherit; /* Наследуем размер шрифта от родителя */
+    text-align: right;
+}
+
+.divider {
+    height: 1px; /* Высота полосы */
+    background-color: #e0e0e0; /* Цвет полосы */
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Убираем квадратики и устанавливаем кнопку размером на всю ячейку */
+    gap: 0; /* Убираем зазор между кнопками */
+}
+
+button {
+    border: none; /* Убираем границу у кнопок */
+    background-color: white; /* Светло-серый фон для кнопок */
+    color: #333; /* Темный цвет текста на кнопках */
+    font-size: 24px; /* Размер шрифта на кнопках */
+    padding: 20px;
+    cursor: pointer;
+    height: 80px;
+    transition: background-color 0.2s;
+    /* Делаем кнопки одинаковыми по высоте и ширине */
+    width: 100%;
+}
+
+/* Оранжевый цвет текста для определенных кнопок */
+button.ac span,
+button.delete span,
+button.percent span,
+button.divide span,
+button.subtract span,
+button.add span,
+button.equals span,
+button.brackets {
+    color: #e79107; /* Оранжевый цвет текста */
+}
+
+/* Цвет кнопок при наведении */
+button:hover {
+    background-color: #f0f0f0; /* Легкий серый фон при наведении */
+}
+
+button.wide {
+    grid-column: span 1; /* Широкая кнопка "0" */
+}
+
+/* Убедитесь, что все кнопки содержат span для текста */
+button span {
+    display: block;
+}
+
+button.equals {
+    background-color: #e79107; /* Оранжевый фон для кнопки */
+    color: #ffffff; /* Белый цвет текста */
+    border-radius: 50%; /* Круглая форма */
+    height: 70px; /* Высота кнопки */
+    width: 70px; /* Ширина кнопки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px; /* Размер шрифта для "=" */
+}
+
+/* Цвет текста для кнопки "=" */
+button.equals span {
+    color: #ffffff; /* Белый цвет текста */
+}
+
+

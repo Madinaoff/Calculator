@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my.phone.css">
+    <script src="my.phone.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="calculator">
+        <div class="display"></div>
+        <input id="result" type="text" readonly>
+        <div class="divider"></div>
+        <div class="buttons">
+            <button class="ac" onclick="clearDisplay()"><span>AC</span></button>
+            <button class="delete" onclick="deleteLastCharacter()"><span>[x]</span></button>
+            <button class="percent" onclick="appendValue('%')"><span>%</span></button>
+            <button class="divide" onclick="appendValue('÷')"><span>÷</span></button>
+            <button onclick="appendValue('7')"><span>7</span></button>
+            <button onclick="appendValue('8')"><span>8</span></button>
+            <button onclick="appendValue('9')"><span>9</span></button>
+            <button class="multiply" onclick="appendValue('x')"><span>x</span></button>
+            <button onclick="appendValue('4')"><span>4</span></button>
+            <button onclick="appendValue('5')"><span>5</span></button>
+            <button onclick="appendValue('6')"><span>6</span></button>
+            <button class="subtract" onclick="appendValue('-')"><span>-</span></button>
+            <button onclick="appendValue('1')"><span>1</span></button>
+            <button onclick="appendValue('2')"><span>2</span></button>
+            <button onclick="appendValue('3')"><span>3</span></button>
+            <button class="add" onclick="appendValue('+')"><span>+</span></button>
+            <button class="brackets" onclick="appendValue('([])')"><span>([])</span></button>
+            <button class="wide" onclick="appendValue('0')"><span>0</span></button>
+            <button onclick="appendValue(',')"><span>,</span></button>
+            <button class="equals" onclick="calculateResult()"><span>=</span></button>  
+        </div>
+    </section>
+</body>
+</html>
+
+
